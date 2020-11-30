@@ -20,13 +20,13 @@ const Alexa = require('ask-sdk-core');
 const i18n = require('i18next');
 
 // core functionality for fact skill
-const GetNewFactHandler = {
+const GetElonTweetHandler = {
   canHandle(handlerInput) {
     const request = handlerInput.requestEnvelope.request;
     // checks request type
     return request.type === 'LaunchRequest'
       || (request.type === 'IntentRequest'
-        && request.intent.name === 'GetNewFactIntent');
+        && request.intent.name === 'GetElonTweetIntent');
   },
   handle(handlerInput) {
     const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
@@ -154,7 +154,7 @@ const skillBuilder = Alexa.SkillBuilders.custom();
 
 exports.handler = skillBuilder
   .addRequestHandlers(
-    GetNewFactHandler,
+    GetElonTweetHandler,
     HelpHandler,
     ExitHandler,
     FallbackHandler,
