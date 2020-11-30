@@ -16,16 +16,16 @@ const GetElonTweetHandler = {
     // gets a random fact by assigning an array to the variable
     // the random item from the array will be selected by the i18next library
     // the i18next library is set up in the Request Interceptor
-    const randomFact = requestAttributes.t('FACTS');
+    const randomElonTweet = requestAttributes.t('TWEETS');
     // concatenates a standard message with the random fact
-    const speakOutput = requestAttributes.t('GET_FACT_MESSAGE') + randomFact;
+    const speakOutput = requestAttributes.t('GET_TWEET_MESSAGE') + randomElonTweet;
 
     return handlerInput.responseBuilder
       .speak(speakOutput)
       // Uncomment the next line if you want to keep the session open so you can
       // ask for another fact without first re-opening the skill
       .reprompt(requestAttributes.t('HELP_REPROMPT'))
-      .withSimpleCard(requestAttributes.t('SKILL_NAME'), randomFact)
+      .withSimpleCard(requestAttributes.t('SKILL_NAME'), randomElonTweet)
       .getResponse();
   },
 };
@@ -151,14 +151,14 @@ exports.handler = skillBuilder
 const enData = {
   translation: {
     SKILL_NAME: 'Elon Musk Tweets',
-    GET_FACT_MESSAGE: 'Here\'s an Elon tweet: ',
-    HELP_MESSAGE: 'You can say tell me a Elon tweet, or, you can say exit... What can I help you with?',
+    GET_TWEET_MESSAGE: 'Here\'s an Elon tweet: ',
+    HELP_MESSAGE: 'You can say tell me an Elon tweet, or, you can say exit... What can I help you with?',
     HELP_REPROMPT: 'What can I help you with?',
-    FALLBACK_MESSAGE: 'The Elon Musk Tweets skill can\'t help you with that. It can help you discover Elon Musk Tweets if you say tell me give me an Elon Musk Tweet. What can I help you with?',
+    FALLBACK_MESSAGE: 'The Elon Musk Tweets skill can\'t help you with that. It can help you discover Elon Musk Tweets if you say tell me give an Elon Musk Tweet. What can I help you with?',
     FALLBACK_REPROMPT: 'What can I help you with?',
     ERROR_MESSAGE: 'Sorry, an error occurred.',
     STOP_MESSAGE: 'Goodbye!',
-    FACTS:
+    TWEETS:
       [
         'The ancient Egyptians were amazing, but if aliens built the pyramids, they would have left behind a computer or something.',
         'If there was a way that I could not eat, so I could work more, I would not eat.',
