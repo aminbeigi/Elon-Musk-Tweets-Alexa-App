@@ -1,7 +1,7 @@
 {
     "name": "Elon Musk Tweets",
-    "version": "1.2.5",
-    "description": "outputs humorous Elon Musk tweets",
+    "version": "1.3.5",
+    "description": "Elon Musk Tweets outputs humorous Elon Musk tweets.",
     "main": "index.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
