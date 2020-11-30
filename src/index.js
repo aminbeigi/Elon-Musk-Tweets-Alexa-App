@@ -1,20 +1,3 @@
-/*
- * Copyright 2018-2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License").
- * You may not use this file except in compliance with the License.
- * A copy of the License is located at
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * or in the "license" file accompanying this file. This file is distributed
- * on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
- * express or implied. See the License for the specific language governing
- * permissions and limitations under the License.
- */
-
-//
-// Alexa Fact Skill - Sample for Beginners
-//
-
 // sets up dependencies
 const Alexa = require('ask-sdk-core');
 const i18n = require('i18next');
@@ -165,11 +148,7 @@ exports.handler = skillBuilder
   .withCustomUserAgent('sample/basic-fact/v2')
   .lambda();
 
-// TODO: Replace this data with your own.
-// It is organized by language/locale.  You can safely ignore the locales you aren't using.
-// Update the name and messages to align with the theme of your skill
-
-const enData = { // keep enData
+const enData = {
   translation: {
     SKILL_NAME: 'Space Facts',
     GET_FACT_MESSAGE: 'Here\'s your fact: ',
@@ -189,8 +168,6 @@ const enData = { // keep enData
       ],
   },
 };
-
-
 
 // constructs i18n and l10n data structure
 const languageStrings = {
