@@ -150,11 +150,11 @@ exports.handler = skillBuilder
 
 const enData = {
   translation: {
-    SKILL_NAME: 'Space Facts',
-    GET_FACT_MESSAGE: 'Here\'s your fact: ',
-    HELP_MESSAGE: 'You can say tell me a space fact, or, you can say exit... What can I help you with?',
+    SKILL_NAME: 'Elon Musk Tweets',
+    GET_FACT_MESSAGE: 'Here\'s an Elon tweet: ',
+    HELP_MESSAGE: 'You can say tell me a Elon tweet, or, you can say exit... What can I help you with?',
     HELP_REPROMPT: 'What can I help you with?',
-    FALLBACK_MESSAGE: 'The Space Facts skill can\'t help you with that.  It can help you discover facts about space if you say tell me a space fact. What can I help you with?',
+    FALLBACK_MESSAGE: 'The Elon Musk Tweets skill can\'t help you with that. It can help you discover Elon Musk Tweets if you say tell me a give me an Elon Musk Tweet. What can I help you with?',
     FALLBACK_REPROMPT: 'What can I help you with?',
     ERROR_MESSAGE: 'Sorry, an error occurred.',
     STOP_MESSAGE: 'Goodbye!',
