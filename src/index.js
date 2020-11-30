@@ -2,7 +2,7 @@
 const Alexa = require('ask-sdk-core');
 const i18n = require('i18next');
 
-// core functionality for fact skill
+// core functionality for tweet skill
 const GetElonTweetHandler = {
   canHandle(handlerInput) {
     const request = handlerInput.requestEnvelope.request;
@@ -13,17 +13,17 @@ const GetElonTweetHandler = {
   },
   handle(handlerInput) {
     const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
-    // gets a random fact by assigning an array to the variable
+    // gets a random tweet by assigning an array to the variable
     // the random item from the array will be selected by the i18next library
     // the i18next library is set up in the Request Interceptor
     const randomElonTweet = requestAttributes.t('TWEETS');
-    // concatenates a standard message with the random fact
+    // concatenates a standard message with the random tweet
     const speakOutput = requestAttributes.t('GET_TWEET_MESSAGE') + randomElonTweet;
 
     return handlerInput.responseBuilder
       .speak(speakOutput)
       // Uncomment the next line if you want to keep the session open so you can
-      // ask for another fact without first re-opening the skill
+      // ask for another tweet without first re-opening the skill
       .reprompt(requestAttributes.t('HELP_REPROMPT'))
       .withSimpleCard(requestAttributes.t('SKILL_NAME'), randomElonTweet)
       .getResponse();
@@ -154,7 +154,7 @@ const enData = {
     GET_TWEET_MESSAGE: 'Here\'s an Elon tweet: ',
     HELP_MESSAGE: 'You can say tell me an Elon tweet, or, you can say exit... What can I help you with?',
     HELP_REPROMPT: 'What can I help you with?',
-    FALLBACK_MESSAGE: 'The Elon Musk Tweets skill can\'t help you with that. It can help you discover Elon Musk Tweets if you say tell me give an Elon Musk Tweet. What can I help you with?',
+    FALLBACK_MESSAGE: 'The Elon Musk Tweets skill can\'t help you with that. It can help you discover Elon Musk tweets if you say give me an Elon Musk tweet. What can I help you with?',
     FALLBACK_REPROMPT: 'What can I help you with?',
     ERROR_MESSAGE: 'Sorry, an error occurred.',
     STOP_MESSAGE: 'Goodbye!',
