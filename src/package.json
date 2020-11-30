@@ -1,12 +1,12 @@
 {
-    "name": "fact",
-    "version": "1.0.0",
-    "description": "",
+    "name": "Elon Musk Tweets",
+    "version": "1.2.5",
+    "description": "outputs humorous Elon Musk tweets",
     "main": "index.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "",
+    "author": "aminbeigi",
     "license": "ISC",
     "dependencies": {
       "ask-sdk-core": "^2.0.0",
