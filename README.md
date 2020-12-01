@@ -16,8 +16,18 @@
 ## Description
 Elon Musk Tweets outputs humorous tweets all quoted from Elon Musk himself.
 
+Ask for Elon Musk tweets and you shall receive one of many.
+
+To ask for more tweets just say "another tweet", to learn about what really matters, like gigafactories in Berlin and also hamsters!
+
+Prepare to witness hilarious and sometimes outright outrages quotes. And yes everything is quoted directly from Elon.
+
+To start, just say "Alexa, open Elon Musk tweets".
+
+At anytime, you can stop by saying "Alexa, stop".
+
 ## Requirements
-* An Amazon Alexa device
+* An Amazon Alexa device.
 
 ## Commands
 The following list details some of the ways you can interact with Elon Musk Tweets.  
