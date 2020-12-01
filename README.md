@@ -14,7 +14,7 @@
 </p>
 
 ## Description
-Rad-Bot is a Discord bot that offers many cool features for our community discord server.
+Elon Musk Tweets outputs humorous tweets all quoted from Elon Musk himself.
 
 ## Requirements
 * An Amazon Alexa device
@@ -25,7 +25,6 @@ Full list of intents are found in package.json.
 * `Alexa open Elon Musk tweets`
 * `Alexa ask Elon Musk tweets give me an Elon tweet`
 * `Alexa ask Elon Musk tweets give me an Elon Musk tweet`
-
 
 ## Acknowledgements
 Amazon's Alexa app framework: https://github.com/alexa-js/alexa-app
