@@ -10,7 +10,8 @@
 <p align="center">
 <a href="../../issues"><img src="https://img.shields.io/github/issues/aminbeigi/Elon-Musk-Tweets-Alexa-App.svg?style=flat-square" /></a>
 <a href="../../pulls"><img src="https://img.shields.io/github/issues-pr/aminbeigi/Elon-Musk-Tweets-Alexa-App.svg?style=flat-square" /></a>
-<img src="https://img.shields.io/github/license/aminbeigi/Elon-Musk-Tweets-Alexa-App?style=flat-square">
+<img src="https://img.shields.io/github/license/aminbeigi/Simpsons-Quote-Generator?style=flat-square">
+
 </p>
 
 ## Description
